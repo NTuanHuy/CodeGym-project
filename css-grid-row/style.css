@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.item {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.item1 {
+    /* Thay đổi linh hoạt các giá trị theo yêu cầu bài thực hành:
+       - grid-row: 1 / 3;
+       - grid-row: 2 / 4;
+       - grid-row: span 2; */
+    grid-row: 1 / 3;
+    background-color: lightcoral;
+    color: white;
+}
