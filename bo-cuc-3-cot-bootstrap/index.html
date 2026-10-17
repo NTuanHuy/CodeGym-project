@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố Cục 3 Cột với Bootstrap Grid và Flexbox</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="bg-light">
+
+    <!-- Header / Tiêu đề có sử dụng Font Awesome -->
+    <header class="container mt-4">
+        <h3 class="text-center fw-bold">
+            <i class="fas fa-home text-primary"></i> Trang Chủ - Bố Cục 3 Cột
+        </h3>
+    </header>
+
+    <!-- Bước 3: Sử dụng Display Property để hiển thị ẩn hiện nội dung theo kích thước màn hình -->
+    <div class="container mt-3">
+        <div class="d-none d-md-block bg-warning text-center p-3 rounded shadow-sm">
+            <p class="mb-0 fw-semibold">Nội dung này chỉ hiển thị trên màn hình lớn hơn hoặc bằng 768px (md trở lên)</p>
+        </div>
+    </div>
+
+    <!-- Bước 1 & Bước 2: Bố cục Grid 3 cột kết hợp Flexbox, Margin & Padding -->
+    <div class="container my-5 py-3">
+        <h3 class="text-center mb-4">Khoảng cách được điều chỉnh bằng Margin & Padding</h3>
+        <div class="row g-4">
+            <div class="col-md-4 d-flex justify-content-center align-items-center bg-white p-4 rounded shadow-sm border">
+                <p class="mb-0 fw-bold text-primary">Phần 1 (Grid & Flexbox)</p>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center align-items-center bg-secondary p-4 rounded shadow-sm text-white">
+                <p class="mb-0 fw-bold">Phần 2 (Grid & Flexbox)</p>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center align-items-center bg-white p-4 rounded shadow-sm border">
+                <p class="mb-0 fw-bold text-success">Phần 3 (Grid & Flexbox)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bước 4: Tạo Carousel (Slideshow hình ảnh) -->
+    <div class="container">
+        <div id="myCarousel" class="carousel slide shadow rounded overflow-hidden" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Hình ảnh 1" style="height: 400px; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Hình ảnh 2" style="height: 400px; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Hình ảnh 3" style="height: 400px; object-fit: cover;">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Bước 6: Tạo Form liên hệ kết hợp Font Awesome -->
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 bg-white p-5 rounded shadow-sm">
+                <h4 class="mb-4 text-center fw-bold text-secondary">Biểu Mẫu Liên Hệ</h4>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label fw-semibold">Họ và tên</label>
+                        <input type="text" class="form-control" id="name" placeholder="Nhập họ và tên">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-semibold">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Nhập email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label fw-semibold">Nội dung</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Nhập nội dung"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100 py-2 fw-bold">
+                        <i class="fas fa-paper-plane me-2"></i> Gửi
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 MyWebsite. Bản quyền thuộc về học viên CodeGym.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
