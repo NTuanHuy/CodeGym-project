@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Tài Khoản</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="bg-light d-flex align-items-center min-vh-100">
+
+<div class="container py-5">
+    <div class="row shadow-lg rounded-4 overflow-hidden bg-white">
+        <div class="col-lg-6 p-0 d-none d-lg-block">
+            <div id="authCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item active h-100">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" class="d-block w-100 h-100 object-fit-cover" alt="Slide 1">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3 mb-5">
+                            <h5>Kết nối cùng cộng đồng</h5>
+                            <p>Tham gia ngay để trải nghiệm các tính năng tuyệt vời và phát triển sự nghiệp.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item h-100">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" class="d-block w-100 h-100 object-fit-cover" alt="Slide 2">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3 mb-5">
+                            <h5>Bảo mật tối đa</h5>
+                            <p>Dữ liệu của bạn được mã hóa và bảo vệ an toàn tuyệt đối 24/7.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#authCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#authCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="col-lg-6 p-5 d-flex flex-column justify-content-center">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold text-primary">Tạo Tài Khoản Mới</h2>
+                <p class="text-muted">Đăng ký ngay để nhận ưu đãi đặc biệt</p>
+            </div>
+
+            <form>
+                <div class="mb-3">
+                    <label for="fullName" class="form-label fw-semibold">Họ và tên</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        <input type="text" class="form-control" id="fullName" placeholder="Nhập họ và tên" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label fw-semibold">Địa chỉ Email</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label fw-semibold">Mật khẩu</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                        <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu" required>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="confirmPassword" class="form-label fw-semibold">Xác nhận mật khẩu</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Nhập lại mật khẩu" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100 py-2 fw-bold mb-3">Đăng Ký</button>
+
+                <p class="text-center text-muted small mb-0">Đã có tài khoản? <a href="#" class="text-decoration-none fw-semibold">Đăng nhập ngay</a></p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
