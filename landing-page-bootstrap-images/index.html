@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page với Bootstrap và Hình Ảnh</title>
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- 1. Hero / Banner Section (Xây dựng chuẩn cho Bootstrap 5) -->
+    <header class="bg-dark text-white py-5 text-center position-relative overflow-hidden">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-lg-start mb-4 mb-lg-0">
+                    <h1 class="display-4 fw-bold mb-3">Sản Phẩm Công Nghệ Đột Phá</h1>
+                    <p class="lead text-white-50 mb-4">Trải nghiệm giải pháp quản lý hiện đại, tối ưu hóa hiệu suất làm việc và nâng tầm doanh nghiệp của bạn ngay hôm nay.</p>
+                    <a href="#cta" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Đăng Ký Ngay</a>
+                    <a href="#about" class="btn btn-outline-light btn-lg px-4">Tìm Hiểu Thêm</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Hero Banner" class="img-fluid rounded-3 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Giới thiệu (Row chứa hình ảnh + mô tả) -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Giới thiệu sản phẩm" class="img-fluid rounded-3 shadow">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-3">Về Dịch Vụ Của Chúng Tôi</h2>
+                    <p class="text-muted">Chúng tôi mang đến các công cụ quản lý số hàng đầu, giao diện thân thiện và tính năng thông minh giúp tối giản hóa công việc thường ngày.</p>
+                    <p class="text-muted">Được tin dùng bởi hơn 10.000 doanh nghiệp vừa và nhỏ trên toàn quốc với cam kết bảo mật tuyệt đối và hỗ trợ kỹ thuật liên tục.</p>
+                    <a href="#cta" class="btn btn-outline-primary fw-bold mt-2">Khám Phá Chi Tiết</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Danh sách tính năng (Grid 4 cột) -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Tính Năng Nổi Bật</h2>
+                <p class="text-muted">Cung cấp đầy đủ công cụ bạn cần để vận hành hiệu quả</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="p-4 border rounded-3 bg-white h-100 shadow-sm">
+                        <div class="fs-1 text-primary mb-3">
+                            <i class="bi bi-speedometer2"></i>
+                        </div>
+                        <h4 class="h5 fw-bold">Tốc Độ Cao</h4>
+                        <p class="text-muted small mb-0">Hệ thống tối ưu hóa giúp truy xuất dữ liệu nhanh chóng và ổn định.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="p-4 border rounded-3 bg-white h-100 shadow-sm">
+                        <div class="fs-1 text-primary mb-3">
+                            <i class="bi bi-shield-lock"></i>
+                        </div>
+                        <h4 class="h5 fw-bold">Bảo Mật Cao</h4>
+                        <p class="text-muted small mb-0">Mã hóa dữ liệu đa lớp đảm bảo an toàn tuyệt đối thông tin người dùng.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="p-4 border rounded-3 bg-white h-100 shadow-sm">
+                        <div class="fs-1 text-primary mb-3">
+                            <i class="bi bi-phone"></i>
+                        </div>
+                        <h4 class="h5 fw-bold">Giao Diện Responsive</h4>
+                        <p class="text-muted small mb-0">Hiển thị hoàn hảo trên mọi nền tảng từ máy tính đến điện thoại.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="p-4 border rounded-3 bg-white h-100 shadow-sm">
+                        <div class="fs-1 text-primary mb-3">
+                            <i class="bi bi-headset"></i>
+                        </div>
+                        <h4 class="h5 fw-bold">Hỗ Trợ 24/7</h4>
+                        <p class="text-muted small mb-0">Đội ngũ kỹ thuật tư vấn và giải đáp thắc mắc của bạn mọi lúc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Nút Kêu Gọi Hành Động (CTA Section) -->
+    <section id="cta" class="bg-primary text-white text-center py-5">
+        <div class="container py-4">
+            <h2 class="fw-bold mb-3">Sẵn Sàng Bắt Đầu Trải Nghiệm?</h2>
+            <p class="lead mb-4">Đăng ký ngay hôm nay để nhận 14 ngày dùng thử miễn phí đầy đủ tính năng.</p>
+            <a href="#" class="btn btn-light btn-lg px-5 fw-bold text-primary shadow">Xem Thêm & Đăng Ký</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0 text-white-50">&copy; 2026 Landing Page Demo. Bản quyền thuộc về học viên CodeGym.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
