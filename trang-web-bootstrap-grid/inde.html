@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web với Bootstrap Grid System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-4 shadow-sm">
+        <div class="container">
+            <h1 class="display-5 fw-bold">Trang Web Với Bootstrap Grid System</h1>
+            <p class="lead mb-0">Xây dựng bố cục responsive linh hoạt và chuyên nghiệp</p>
+        </div>
+    </header>
+
+    <!-- Navbar với Dropdown -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">MyWebsite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Trang Chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Giới Thiệu</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dịch Vụ</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Thiết Kế Web</a></li>
+                            <li><a class="dropdown-item" href="#">Lập Trình App</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">SEO & Marketing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Liên Hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content & Sidebar sử dụng Grid System -->
+    <div class="container my-5">
+        <div class="row g-4">
+            <!-- Main Content (col-lg-8 trên màn hình lớn, col-12 trên mobile) -->
+            <main class="col-lg-8 col-12">
+                <div class="p-4 bg-white rounded shadow-sm h-100">
+                    <h2 class="mb-3 text-primary">Nội Dung Chính</h2>
+                    <p class="text-muted">
+                        Bootstrap Grid System sử dụng một loạt các container, hàng (row) và cột (col) để bố trí và căn chỉnh nội dung. 
+                        Nó được xây dựng bằng flexbox và hoàn toàn đáp ứng (responsive).
+                    </p>
+                    <p>
+                        Trên các màn hình lớn (desktop), khu vực này chiếm phần lớn không gian hiển thị bài viết, hình ảnh hoặc các thành phần cốt lõi của trang web. 
+                        Khi thu nhỏ màn hình xuống thiết bị di động (mobile), các cột sẽ tự động xếp chồng lên nhau theo chiều dọc để người dùng dễ dàng theo dõi.
+                    </p>
+                    <hr class="my-4">
+                    <h4 class="mb-3">Bài viết nổi bật</h4>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="p-3 border rounded bg-light">
+                                <h5 class="h6 fw-bold">Tìm hiểu về Flexbox trong CSS</h5>
+                                <p class="small text-muted mb-0">Khám phá cách quản lý không gian và căn chỉnh các phần tử một cách linh hoạt.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 border rounded bg-light">
+                                <h5 class="h6 fw-bold">Ứng dụng Grid System hiệu quả</h5>
+                                <p class="small text-muted mb-0">Xây dựng lưới bố cục chuẩn 12 cột cho mọi dự án website hiện đại.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Sidebar (col-lg-4 trên màn hình lớn, tự động xuống dòng và full width trên mobile) -->
+            aside class="col-lg-4 col-12">
+                <div class="p-4 bg-white rounded shadow-sm mb-4">
+                    <h4 class="h5 mb-3 text-secondary">Danh Mục</h4>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Lập trình Web căn bản</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none">HTML5 & CSS3 nâng cao</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none">JavaScript & DOM</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Bootstrap Framework</a></li>
+                        <li><a href="#" class="text-decoration-none">Git & GitHub cơ bản</a></li>
+                    </ul>
+                </div>
+
+                <div class="p-4 bg-white rounded shadow-sm">
+                    <h4 class="h5 mb-3 text-secondary">Quảng Cáo / Thông Báo</h4>
+                    <p class="small text-muted">Khóa học lập trình web thực chiến cùng CodeGym giúp bạn nắm vững tay nghề chỉ sau vài tháng.</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary w-100">Đăng Ký Ngay</a>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 MyWebsite. Bản quyền thuộc về học viên CodeGym.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
