@@ -1,0 +1,22 @@
+body {
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.content-box {
+    background-image: url('https://picsum.photos/800/400');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 40px auto;
+    max-width: 600px;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
