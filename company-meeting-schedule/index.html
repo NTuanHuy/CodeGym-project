@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch họp công ty</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #bdc3c7;
+            padding: 12px 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #2980b9;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Lịch họp công ty</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Ngày</th>
+                <th>Giờ</th>
+                <th>Nội dung cuộc họp</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- rowspan="2" để gộp ngày Thứ Hai khi có 2 cuộc họp -->
+                <td rowspan="2"><strong>Thứ Hai</strong><br>(20/10/2026)</td>
+                <td>08:00 - 09:30</td>
+                <td>Họp giao ban đầu tuần các Trưởng bộ phận</td>
+            </tr>
+            <tr>
+                <td>10:00 - 11:30</td>
+                <td>Đánh giá tiến độ dự án Website e-Commerce</td>
+            </tr>
+            <tr>
+                <!-- rowspan="2" để gộp ngày Thứ Ba khi có 2 sự kiện/cuộc họp -->
+                <td rowspan="2"><strong>Thứ Ba</strong><br>(21/10/2026)</td>
+                <td>09:00 - 11:00</td>
+                <td>Họp định hướng kế hoạch Marketing quý IV</td>
+            </tr>
+            <tr>
+                <!-- colspan="2" để gộp cột Giờ và Nội dung cho sự kiện kéo dài cả chiều -->
+                <td colspan="2">13:30 - 17:00: Hội thảo Đào tạo An toàn thông tin nội bộ (Kéo dài cả buổi chiều)</td>
+            </tr>
+            <tr>
+                <td><strong>Thứ Tư</strong><br>(22/10/2026)</td>
+                <td>14:00 - 15:30</td>
+                <td>Gặp gỡ và thảo luận hợp tác với đối tác mới</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
