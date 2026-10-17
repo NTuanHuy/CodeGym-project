@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery-item {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: calc(25% - 15px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.desc {
+    padding: 10px;
+    font-size: 14px;
+    color: #555555;
+}
+
+/* Màn hình nhỏ hơn 700px: Hiển thị 2 ảnh trên một dòng */
+@media (max-width: 700px) {
+    .gallery-item {
+        width: calc(50% - 15px);
+    }
+}
+
+/* Màn hình nhỏ hơn 500px: Hiển thị 1 ảnh trên một dòng */
+@media (max-width: 500px) {
+    .gallery-item {
+        width: 100%;
+    }
+}
