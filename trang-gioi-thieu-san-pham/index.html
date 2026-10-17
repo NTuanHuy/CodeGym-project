@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Sản Phẩm - iPhone Style</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="bg-black text-white">
+
+    <!-- Navbar / Sub-nav phong cách Apple -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-secondary">
+        <div class="container d-flex justify-content-between align-items-center py-2">
+            <a class="navbar-brand fw-bold fs-4" href="#"><i class="fab fa-apple"></i> iPhone Pro</a>
+            <ul class="nav align-items-center">
+                <li class="nav-item"><a class="nav-link text-white-50" href="#overview">Tổng quan</a></li>
+                <li class="nav-item"><a class="nav-link text-white-50" href="#specs">Thông số</a></li>
+                <li class="nav-item"><a class="nav-link text-white-50" href="#pricing">Mua hàng</a></li>
+                <li class="nav-item ms-3">
+                    <a href="#pricing" class="btn btn-primary btn-sm rounded-pill px-3 fw-semibold">Đặt trước</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section / Giới thiệu sản phẩm chính -->
+    <header class="text-center py-5 bg-black overflow-hidden">
+        <div class="container py-5">
+            <p class="text-warning text-uppercase fw-semibold tracking-wide mb-2">Mới</p>
+            <h1 class="display-3 fw-bold mb-3">iPhone 16 Pro Max</h1>
+            <p class="lead text-white-50 mb-4 mx-auto" style="max-width: 600px;">Thiết kế titan đẳng cấp. Camera siêu việt. Chip A18 Pro mạnh mẽ vượt trội.</p>
+            <div class="d-flex justify-content-center gap-3 mb-5">
+                <a href="#pricing" class="btn btn-primary rounded-pill px-4 py-2 fw-semibold">Xem giá</a>
+                <a href="#overview" class="btn btn-outline-light rounded-pill px-4 py-2 fw-semibold">Tìm hiểu thêm</a>
+            </div>
+            <div class="container px-4">
+                <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=1000&q=80" alt="iPhone 16 Pro Max" class="img-fluid rounded-4 shadow-lg" style="max-height: 500px; object-fit: cover;">
+            </div>
+        </div>
+    </header>
+
+    <!-- Overview / Tính năng nổi bật với Grid & Flexbox -->
+    <section id="overview" class="py-5 bg-dark text-white">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold display-5">Hiệu Năng Đỉnh Cao</h2>
+                <p class="text-white-50">Khám phá những công nghệ đột phá bên trong thiết kế hoàn mỹ.</p>
+            </div>
+            
+            <div class="row g-4 align-items-center">
+                <div class="col-md-4">
+                    <div class="p-4 bg-black rounded-4 h-100 d-flex flex-column justify-content-between border border-secondary">
+                        <div>
+                            <div class="fs-1 text-warning mb-3"><i class="fas fa-microchip"></i></div>
+                            <h3 class="h4 fw-bold">Chip A18 Pro</h3>
+                            <p class="text-white-50 small">Được xây dựng trên tiến trình 3nm thế hệ thứ hai, mang lại tốc độ xử lý đồ họa và AI kinh ngạc.</p>
+                        </div>
+                        <span class="text-primary fw-semibold small mt-3">Hiệu năng vượt trội <i class="fas fa-arrow-right ms-1"></i></span>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="p-4 bg-black rounded-4 h-100 d-flex flex-column justify-content-between border border-secondary">
+                        <div>
+                            <div class="fs-1 text-info mb-3"><i class="fas fa-camera"></i></div>
+                            <h3 class="h4 fw-bold">Camera 48MP Pro</h3>
+                            <p class="text-white-50 small">Hệ thống camera chuyên nghiệp với khả năng zoom quang học xa hơn và quay video ProRes chuẩn điện ảnh.</p>
+                        </div>
+                        <span class="text-primary fw-semibold small mt-3">Sắc nét từng chi tiết <i class="fas fa-arrow-right ms-1"></i></span>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="p-4 bg-black rounded-4 h-100 d-flex flex-column justify-content-between border border-secondary">
+                        <div>
+                            <div class="fs-1 text-success mb-3"><i class="fas fa-battery-full"></i></div>
+                            <h3 class="h4 fw-bold">Pin Cực Trâu</h3>
+                            <p class="text-white-50 small">Thời lượng pin vượt trội cho phép bạn xem video liên tục suốt cả ngày dài mà không lo gián đoạn.</p>
+                        </div>
+                        <span class="text-primary fw-semibold small mt-3">Năng lượng bền bỉ <i class="fas fa-arrow-right ms-1"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specs Section -->
+    <section id="specs" class="py-5 bg-black">
+        <div class="container py-4 text-center" style="max-width: 800px;">
+            <h2 class="fw-bold mb-4">Thông Số Kỹ Thuật Nổi Bật</h2>
+            <div class="row g-3 text-start">
+                <div class="col-sm-6">
+                    <div class="p-3 bg-dark rounded border border-secondary d-flex align-items-center gap-3">
+                        <i class="fas fa-mobile-alt fs-2 text-primary"></i>
+                        <div>
+                            <h6 class="mb-0 fw-bold">Màn hình</h6>
+                            <p class="text-white-50 small mb-0">Super Retina XDR 6.9 inch</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="p-3 bg-dark rounded border border-secondary d-flex align-items-center gap-3">
+                        <i class="fas fa-weight-hanging fs-2 text-warning"></i>
+                        <div>
+                            <h6 class="mb-0 fw-bold">Trọng lượng</h6>
+                            <p class="text-white-50 small mb-0">221 gram (Titan siêu nhẹ)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / Mua hàng -->
+    <section id="pricing" class="py-5 bg-dark">
+        <div class="container py-4 text-center" style="max-width: 600px;">
+            <h2 class="fw-bold mb-3">Sẵn Sở Hữu Ngay Hôm Nay?</h2>
+            <p class="text-white-50 mb-4">Giá khởi điểm chỉ từ $999 hoặc trả góp 0% lãi suất qua các đối tác liên kết.</p>
+            <a href="#" class="btn btn-primary btn-lg rounded-pill px-5 fw-bold shadow">Đặt Mua Ngay</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white-50 text-center py-4 border-top border-secondary">
+        <div class="container">
+            <p class="small mb-0">&copy; 2026 iPhone Product Page Demo. Bản quyền thuộc về học viên CodeGym.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
