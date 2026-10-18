@@ -1,0 +1,35 @@
+.footer {
+  background-color: #1a252f;
+  color: $text-light;
+  padding: 40px 20px;
+  text-align: center;
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    p {
+      font-size: 0.95rem;
+      color: #aaa;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+
+      a {
+        color: $text-light;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
