@@ -1,0 +1,5 @@
+.card {
+  @include box-style;
+  max-width: 400px;
+  margin-top: 15px;
+}
